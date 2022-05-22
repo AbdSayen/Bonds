@@ -1,4 +1,37 @@
 body {
+    color: #000;
     font-family: 'Oswald';
     font-weight: 400;
+    height: 100vh;
+    .container {
+        width: 1080px;
+        margin: auto;
+    }
+    .circle {
+        border-radius: 100rem;
+    }
+    .btn {
+        color: #B4FFBC;
+        font-size: 1.5rem;
+        font-weight: 700;
+        background: linear-gradient(129deg, rgba(42, 116, 58, 1) 0%, rgba(65, 170, 94, 1) 100%);
+        border: none;
+        width: 11.6rem;
+        height: 3.3rem;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 30px 6px #2A743A;
+        transition: 0.6s;
+        &:hover {
+            background: white;
+            color: green;
+            border: green 1.5px solid;
+        }
+    }
+    a {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        color: black;
+        align-self: end;
+    }
 }

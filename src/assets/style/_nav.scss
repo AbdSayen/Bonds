@@ -1,0 +1,64 @@
+    nav {
+        padding-top: 1.7rem;
+        position: fixed;
+        z-index: 100;
+        .dop {
+            width: 2.5rem;
+            height: 0.3rem;
+            margin: auto;
+            color: black;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            .logo {
+                width: 9.75rem;
+            }
+            ul {
+                margin: 0;
+                display: flex;
+                padding: 0;
+                li {
+                    list-style: none;
+                    margin-right: 1.25rem;
+                    font-size: 1.25rem;
+                    align-self: end;
+                    cursor: pointer;
+                }
+                // #home {
+                //     font-weight: 700;
+                // }
+            }
+        }
+        .phone {
+            display: flex;
+            align-items: end;
+            .number {
+                font-weight: 700;
+                font-size: 1.25rem;
+            }
+        }
+        .profile {
+            align-self: end;
+            display: flex;
+            .fa-caret-down {
+                color: black;
+                align-self: center;
+            }
+            h3 {
+                margin: 0 0.5rem;
+                align-self: end;
+            }
+            .circle {
+                background-color: black;
+                width: 2.5rem;
+                height: 2.5rem;
+                i {
+                    font-size: 1.2rem;
+                    color: white;
+                    text-align: center;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }

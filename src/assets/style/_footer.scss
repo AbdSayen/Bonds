@@ -1,0 +1,66 @@
+footer {
+    background-color: #171717;
+    height: 36rem;
+    background-image: url(./../img/Ellipse.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    .container {
+        position: relative;
+        color: white;
+        .head {
+            padding-top: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            h3 {
+                font-size: 3rem;
+                font-weight: 700;
+                align-self: end;
+            }
+        }
+        .send {
+            position: absolute;
+            width: 100%;
+            bottom: -20rem;
+            display: flex;
+            justify-content: space-between;
+            // .inputs {}
+            input {
+                border: none;
+                background: none;
+                border-bottom: 1px solid white;
+                font-size: 1.5rem;
+                width: 25rem;
+                color: white;
+                margin: 1.5rem 0;
+            }
+            .message {
+                display: flex;
+                input {
+                    margin-left: 29rem;
+                    padding-bottom: 5.6rem;
+                }
+                .btn {
+                    align-self: end;
+                    margin-left: -6rem;
+                    margin-bottom: -3rem;
+                    width: 6rem;
+                }
+            }
+            .position-absolute {
+                .d-flex {
+                    align-items: center;
+                    p {
+                        margin: 0;
+                        color: grey;
+                    }
+                    input {
+                        width: 3rem;
+                        margin: 0;
+                        background: none !important;
+                        margin-left: -1rem;
+                    }
+                }
+            }
+        }
+    }
+}

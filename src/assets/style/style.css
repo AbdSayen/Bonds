@@ -17,15 +17,190 @@
 }
 
 body {
+  color: #000;
   font-family: 'Oswald';
   font-weight: 400;
+  height: 100vh;
 }
 
-.home {
-  width: 30%;
+body .container {
+  width: 1080px;
+  margin: auto;
+}
+
+body .circle {
+  border-radius: 100rem;
+}
+
+body .btn {
+  color: #B4FFBC;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(129deg, #2a743a 0%, #41aa5e 100%);
+  border: none;
+  width: 11.6rem;
+  height: 3.3rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 5px 5px 30px 6px #2A743A;
+          box-shadow: 5px 5px 30px 6px #2A743A;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+body .btn:hover {
+  background: white;
+  color: green;
+  border: green 1.5px solid;
+}
+
+body a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: black;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+nav {
+  padding-top: 1.7rem;
+  position: fixed;
+  z-index: 100;
+}
+
+nav .dop {
+  width: 2.5rem;
+  height: 0.3rem;
+  margin: auto;
+  color: black;
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .container .logo {
+  width: 9.75rem;
+}
+
+nav .container ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+nav .container ul li {
+  list-style: none;
+  margin-right: 1.25rem;
+  font-size: 1.25rem;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  cursor: pointer;
+}
+
+nav .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+nav .phone .number {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+nav .profile {
+  -ms-flex-item-align: end;
+      align-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .profile .fa-caret-down {
+  color: black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+nav .profile h3 {
+  margin: 0 0.5rem;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+nav .profile .circle {
+  background-color: black;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+nav .profile .circle i {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.chooseUs {
+  margin-top: -20rem;
+}
+
+.chooseUs h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.chooseUs .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chooseUs .cards .card {
+  padding: 1.5rem;
+  height: 24.3rem;
+  width: 18.75rem;
+  border-radius: 30px;
+  background-color: #E9E9E9;
+  -webkit-box-shadow: 0px 0px 34px -15px #000000;
+          box-shadow: 0px 0px 34px -15px #000000;
+  text-align: center;
+}
+
+.chooseUs .cards .card img {
   margin: 0 auto;
-  width: 40rem;
-  height: 40rem;
+  width: 100px;
+  margin-top: 3rem;
+}
+
+.chooseUs .cards .card h3 {
+  font-size: 40px;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+.chooseUs .cards .card p {
+  font-size: 20px;
 }
 
 .post {
@@ -98,5 +273,281 @@ body {
 .post .user .subscribers {
   position: absolute;
   right: 0;
+}
+
+nav {
+  padding-top: 1.7rem;
+  position: fixed;
+  z-index: 100;
+}
+
+nav .dop {
+  width: 2.5rem;
+  height: 0.3rem;
+  margin: auto;
+  color: black;
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .container .logo {
+  width: 9.75rem;
+}
+
+nav .container ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+nav .container ul li {
+  list-style: none;
+  margin-right: 1.25rem;
+  font-size: 1.25rem;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  cursor: pointer;
+}
+
+nav .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+nav .phone .number {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+nav .profile {
+  -ms-flex-item-align: end;
+      align-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .profile .fa-caret-down {
+  color: black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+nav .profile h3 {
+  margin: 0 0.5rem;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+nav .profile .circle {
+  background-color: black;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+nav .profile .circle i {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.home {
+  background: linear-gradient(153deg, #a1ffa5 0%, #69f66e 100%);
+  padding-bottom: 35rem;
+  padding-top: 5rem;
+}
+
+.title-home-page {
+  margin: 0;
+  margin-top: 12rem;
+}
+
+.title-home-page .container .title {
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.title-home-page .container .description {
+  font-size: 1.25rem;
+  text-align: left;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.title-home-page .container .btn {
+  float: left;
+}
+
+.message {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  width: 54rem;
+}
+
+.recommendations {
+  width: 30%;
+  margin: 0 auto;
+  width: 40rem;
+  height: 40rem;
+}
+
+.info-section {
+  margin-top: -10rem;
+  padding-top: 25rem;
+  background-image: url(./../img/pattern.png);
+}
+
+.info-section .info-card {
+  text-align: left;
+}
+
+.info-section .info-card .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 15.9rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-section .info-card .container img {
+  width: 11.25rem;
+  height: 11.25rem;
+}
+
+.info-section .info-card .container .h3 {
+  font-size: 40px;
+}
+
+.info-section .info-card .container p {
+  font-size: 20px;
+}
+
+.info-section .green {
+  background-color: #89FC8D;
+  text-align: right !important;
+}
+
+.info-section .btn-section {
+  padding: 5rem;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.info-section .btn-section .btn {
+  margin: auto !important;
+}
+
+footer {
+  background-color: #171717;
+  height: 36rem;
+  background-image: url(./../img/Ellipse.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+footer .container {
+  position: relative;
+  color: white;
+}
+
+footer .container .head {
+  padding-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container .head h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+footer .container .send {
+  position: absolute;
+  width: 100%;
+  bottom: -20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container .send input {
+  border: none;
+  background: none;
+  border-bottom: 1px solid white;
+  font-size: 1.5rem;
+  width: 25rem;
+  color: white;
+  margin: 1.5rem 0;
+}
+
+footer .container .send .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container .send .message input {
+  margin-left: 29rem;
+  padding-bottom: 5.6rem;
+}
+
+footer .container .send .message .btn {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  margin-left: -6rem;
+  margin-bottom: -3rem;
+  width: 6rem;
+}
+
+footer .container .send .position-absolute .d-flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container .send .position-absolute .d-flex p {
+  margin: 0;
+  color: grey;
+}
+
+footer .container .send .position-absolute .d-flex input {
+  width: 3rem;
+  margin: 0;
+  background: none !important;
+  margin-left: -1rem;
 }
 /*# sourceMappingURL=style.css.map */

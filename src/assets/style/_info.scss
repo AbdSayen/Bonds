@@ -1,0 +1,40 @@
+.info-section {
+    margin-top: -10rem;
+    padding-top: 25rem;
+    background-image: url(./../img/pattern.png);
+    .info-card {
+        text-align: left;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            height: 15.9rem;
+            align-items: center;
+            img {
+                width: 11.25rem;
+                height: 11.25rem;
+            }
+            .h3 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+    .green {
+        background-color: #89FC8D;
+        text-align: right !important;
+    }
+    .btn-section {
+        padding: 5rem;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+        .btn {
+            margin: auto !important;
+        }
+    }
+}
+
+// .info-section:nth-child(2) {
+//     background-color: #89FC8D;
+// }

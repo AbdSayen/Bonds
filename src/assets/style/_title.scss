@@ -1,0 +1,32 @@
+.home {
+    background: linear-gradient(153deg, rgba(161, 255, 165, 1) 0%, rgba(105, 246, 110, 1) 100%);
+    padding-bottom: 35rem;
+    padding-top: 5rem;
+}
+
+.title-home-page {
+    margin: 0;
+    margin-top: 12rem;
+    .container {
+        .title {
+            text-align: left;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .description {
+            font-size: 1.25rem;
+            text-align: left;
+            margin: 1.5rem 0 2.5rem;
+        }
+        .btn {
+            float: left;
+        }
+    }
+}
+
+.message {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    width: 54rem;
+}
