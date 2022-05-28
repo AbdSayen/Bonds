@@ -2,6 +2,9 @@
         padding-top: 1.7rem;
         position: fixed;
         z-index: 100;
+        width: 100%;
+        transition: 0.3s;
+        height: 8rem;
         .dop {
             width: 2.5rem;
             height: 0.3rem;
@@ -60,5 +63,15 @@
                     margin-top: 0.5rem;
                 }
             }
+        }
+    }
+    
+    .App {
+        .scrolled {
+            background-color: white !important;
+            opacity: 100%;
+        }
+        .scrolled:hover {
+            opacity: 100%;
         }
     }

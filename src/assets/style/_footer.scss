@@ -5,6 +5,34 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     .container {
+        .check-boxes {
+            margin-top: 3rem !important;
+            justify-content: center;
+            margin: auto;
+            display: flex;
+            .d-flex {
+                align-items: center;
+                p {
+                    margin: 0;
+                    color: grey;
+                }
+                input {
+                    width: 3rem;
+                    margin: 0;
+                    background: none !important;
+                    margin-left: -1rem;
+                    background-color: transparent;
+                }
+            }
+            .btn {
+                align-self: end;
+                width: 50px !important;
+                height: 50px !important;
+                border-radius: 2rem;
+                margin-left: 1.5rem;
+            }
+        }
+        width: initial !important;
         position: relative;
         color: white;
         .head {
@@ -18,13 +46,18 @@ footer {
             }
         }
         .send {
-            position: absolute;
-            width: 100%;
-            bottom: -20rem;
             display: flex;
+            width: 100%;
             justify-content: space-between;
-            // .inputs {}
-            input {
+            margin-top: 4rem;
+            .inputs {
+                width: 100%;
+                #name-email {
+                    width: fit-content;
+                }
+            }
+            input,
+            textarea {
                 border: none;
                 background: none;
                 border-bottom: 1px solid white;
@@ -33,32 +66,14 @@ footer {
                 color: white;
                 margin: 1.5rem 0;
             }
-            .message {
+            textarea {
+                resize: none;
+                height: 8rem;
+            }
+            .message-box {
                 display: flex;
                 input {
-                    margin-left: 29rem;
                     padding-bottom: 5.6rem;
-                }
-                .btn {
-                    align-self: end;
-                    margin-left: -6rem;
-                    margin-bottom: -3rem;
-                    width: 6rem;
-                }
-            }
-            .position-absolute {
-                .d-flex {
-                    align-items: center;
-                    p {
-                        margin: 0;
-                        color: grey;
-                    }
-                    input {
-                        width: 3rem;
-                        margin: 0;
-                        background: none !important;
-                        margin-left: -1rem;
-                    }
                 }
             }
         }

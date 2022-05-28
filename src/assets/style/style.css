@@ -38,8 +38,6 @@ body .btn {
   font-weight: 700;
   background: linear-gradient(129deg, #2a743a 0%, #41aa5e 100%);
   border: none;
-  width: 11.6rem;
-  height: 3.3rem;
   border-radius: 1rem;
   -webkit-box-shadow: 5px 5px 30px 6px #2A743A;
           box-shadow: 5px 5px 30px 6px #2A743A;
@@ -67,6 +65,10 @@ nav {
   padding-top: 1.7rem;
   position: fixed;
   z-index: 100;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 8rem;
 }
 
 nav .dop {
@@ -154,6 +156,15 @@ nav .profile .circle i {
   color: white;
   text-align: center;
   margin-top: 0.5rem;
+}
+
+.App .scrolled {
+  background-color: white !important;
+  opacity: 100%;
+}
+
+.App .scrolled:hover {
+  opacity: 100%;
 }
 
 .chooseUs {
@@ -279,6 +290,10 @@ nav {
   padding-top: 1.7rem;
   position: fixed;
   z-index: 100;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 8rem;
 }
 
 nav .dop {
@@ -368,6 +383,15 @@ nav .profile .circle i {
   margin-top: 0.5rem;
 }
 
+.App .scrolled {
+  background-color: white !important;
+  opacity: 100%;
+}
+
+.App .scrolled:hover {
+  opacity: 100%;
+}
+
 .home {
   background: linear-gradient(153deg, #a1ffa5 0%, #69f66e 100%);
   padding-bottom: 35rem;
@@ -393,20 +417,20 @@ nav .profile .circle i {
 
 .title-home-page .container .btn {
   float: left;
+  width: 11.6rem;
+  height: 3.3rem;
 }
 
 .message {
   position: absolute;
   z-index: 0;
   top: 0;
-  width: 54rem;
+  width: 53rem;
 }
 
 .recommendations {
-  width: 30%;
   margin: 0 auto;
   width: 40rem;
-  height: 40rem;
 }
 
 .info-section {
@@ -458,6 +482,8 @@ nav .profile .circle i {
 
 .info-section .btn-section .btn {
   margin: auto !important;
+  width: 11.6rem;
+  height: 3.3rem;
 }
 
 footer {
@@ -469,8 +495,49 @@ footer {
 }
 
 footer .container {
+  width: initial !important;
   position: relative;
   color: white;
+}
+
+footer .container .check-boxes {
+  margin-top: 3rem !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container .check-boxes .d-flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container .check-boxes .d-flex p {
+  margin: 0;
+  color: grey;
+}
+
+footer .container .check-boxes .d-flex input {
+  width: 3rem;
+  margin: 0;
+  background: none !important;
+  margin-left: -1rem;
+  background-color: transparent;
+}
+
+footer .container .check-boxes .btn {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 2rem;
+  margin-left: 1.5rem;
 }
 
 footer .container .head {
@@ -492,18 +559,28 @@ footer .container .head h3 {
 }
 
 footer .container .send {
-  position: absolute;
-  width: 100%;
-  bottom: -20rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 4rem;
 }
 
-footer .container .send input {
+footer .container .send .inputs {
+  width: 100%;
+}
+
+footer .container .send .inputs #name-email {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+footer .container .send input,
+footer .container .send textarea {
   border: none;
   background: none;
   border-bottom: 1px solid white;
@@ -513,41 +590,18 @@ footer .container .send input {
   margin: 1.5rem 0;
 }
 
-footer .container .send .message {
+footer .container .send textarea {
+  resize: none;
+  height: 8rem;
+}
+
+footer .container .send .message-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer .container .send .message input {
-  margin-left: 29rem;
+footer .container .send .message-box input {
   padding-bottom: 5.6rem;
-}
-
-footer .container .send .message .btn {
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-  margin-left: -6rem;
-  margin-bottom: -3rem;
-  width: 6rem;
-}
-
-footer .container .send .position-absolute .d-flex {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .container .send .position-absolute .d-flex p {
-  margin: 0;
-  color: grey;
-}
-
-footer .container .send .position-absolute .d-flex input {
-  width: 3rem;
-  margin: 0;
-  background: none !important;
-  margin-left: -1rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,18 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-import Recommendations from './pages/Recommendations';
+import './pages/Recommendations'
 import Homepage from './pages/HomePage';
-import Navbar from './components/NavBar';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Navigate, Outlet, Route, Routes } from 'react-router-dom'
+import Layout1 from './components/layouts/Layout1';
+import Recommendations from './pages/Recommendations';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Homepage />
-      <Footer />
-      {/* <Recommendations /> */}
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path='/' element={<Layout1 />}>
+            <Route index element={<Homepage />} />
+            <Route path="recommendation" element={<Recommendations />} />
+          </Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
